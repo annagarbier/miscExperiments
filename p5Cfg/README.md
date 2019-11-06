@@ -1,4 +1,4 @@
-# CFG that writes very simple p5.js code.
+# CFG that writes very simple p5.js code
 
 ## Example outputs:
 
