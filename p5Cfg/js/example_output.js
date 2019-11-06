@@ -1,1 +1,1 @@
-function setup() { createCanvas(200, 200); background(50, 0, 150); fill(200, 200, 150); stroke(50, 100, 100); strokeWeight(2); ellipse(50, 150, 100, 100); noLoop(); }
+function setup() { createCanvas(255, 255); background(132, 203, 222); fill(113, 184, 15); stroke(178, 1, 166); strokeWeight(3); rect(152, 152, 18, 201); }
