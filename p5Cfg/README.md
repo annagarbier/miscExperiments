@@ -8,4 +8,4 @@ function setup() { createCanvas(255, 255); background(132, 203, 222); fill(113, 
 
 ## Ten different example outputs, executed:
 
-![Image](./example_ten.png)
+![Image](./example.png)
