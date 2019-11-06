@@ -1,15 +1,20 @@
-const stillLifeGrm = {
+const p5Grm = {
     "S": ["#setup#"],
-    "setup": ["function setup() { #canvas# #background# #fill# #stroke# #weight# #shape# noLoop(); }"],
-    "canvas": ["createCanvas(200, 200);"],
-    "background": ["background(#color#, #color#, #color#);"],
-    "fill": ["fill(#color#, #color#, #color#);"],
-    "stroke": ["stroke(#color#, #color#, #color#);"],
-    "weight": ["strokeWeight(2);"],
-    "color": ["0", "50", "100", "150", "200", "250"],
-    "shape": ["ellipse(#shape_params#);", "rect(#shape_params#);"],
-    "shape_params": ["#shape_param#, #shape_param#, #shape_param#, #shape_param#"],
-    "shape_param": ["50", "100", "150"]
+    "setup": ["function setup() { #canvas# #background# #fill# #stroke# #weight# #shape# }"],
+    "canvas": ["createCanvas(255, 255);"],
+    "weight": ["strokeWeight(3);"],
+    "background": [`background(${getRand()}, ${getRand()}, ${getRand()});`],
+    "fill": [`fill(${getRand()}, ${getRand()}, ${getRand()});`],
+    "stroke": [`stroke(${getRand()}, ${getRand()}, ${getRand()});`],
+    "color": [`${getRand()}, ${getRand()}, ${getRand()}`],
+    "shape": [
+        `rect(${getRand()}, ${getRand()}, ${getRand()}, ${getRand()});`,
+        `ellipse(${getRand()}, ${getRand()}, ${getRand()}, ${getRand()});`]
+}
+
+function getRand() {
+    num = Math.floor(Math.random() * 255);
+    return num.toString();
 }
 
 function expandGrm(grammar, parentDiv) {
@@ -21,7 +26,7 @@ function expandGrm(grammar, parentDiv) {
 }
 
 function main() {
-    expandGrm(stillLifeGrm, "output");
+    expandGrm(p5Grm, "output");
 }
 
 setTimeout(main, 10);
