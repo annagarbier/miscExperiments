@@ -1,5 +1,7 @@
 # CFG that writes very simple p5.js code
 
+The following code was only kind of written by a human. When run, the code produces simple but infinitely variable visual outputs.
+
 ## Example outputs:
 
 ```javascript
